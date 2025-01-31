@@ -1,0 +1,76 @@
+:root {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #212121;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.form-date {
+  --control-height: 40px;
+  --border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 320px;
+}
+
+.form-date label {
+  font-size: 1.1rem;
+  background-color: transparent;
+}
+
+.form-date .date-field {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  height: var(--control-height);
+  border: solid 3px #212121;;
+  border-radius: var(--border-radius);
+}
+
+.form-date .date-field svg {
+  width: 24px;
+  height: 24px;
+}
+
+.form-date .date-field .date-selector {
+  flex-grow: 1;
+  height: calc(100% - 6px);
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  appearance: none;
+}
+
+.form-date .btn-calculate {
+  height: var(--control-height);
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: var(--border-radius);
+  color: #fafafa;
+  background-color: #424242;
+  appearance: none;
+}
+
+.form-date .btn-calculate:hover {
+  background-color: #616161;
+}
+
+.form-date .output {
+  display: none;
+  margin: 12px 0 0 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
